@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-image {
+  background: url(../images/small_pic.jpg) right top no-repeat,
+    url(../images/sea.jpg) 50% 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: 20vh, cover;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  float: none;
+}
+
+.bg-image-gallery {
+  background: url(../images/bacground-txt.jpg);
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+}
+
+.bg-overlay {
+  background-color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 100vw;
+  min-height: 50px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navbar-link {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: brown;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+
+.article {
+  padding: 1px 5px;
+}
+
+.article-komment {
+  color: lightcoral;
+  padding: 2px 5px;
+}
+
+.article-title {
+  font-family: "Oswald", sans-serif;
+  border-bottom: 1px solid black;
+  font-weight: 200;
+}
+
+.article-title_link {
+  text-decoration: none;
+  color: olive;
+}
+
+.article-text {
+  background-color: papayawhip;
+  padding: 10px 5px;
+}
+
+.article-read:hover {
+  text-decoration: none;
+  color: dodgerblue;
+  transition: 0.7s;
+}
+
+.article-inner-title {
+  text-align: center;
+}
+
+.article-inner-text p {
+  font-size: 1.5rem;
+}
+
+.article-inner-text p::first-letter {
+  font-size: 50px;
+  color: gold;
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+}
+
+.catalog {
+  width: 50vw;
+  margin-left: 10px;
+}
+
+.catalog__element {
+  list-style-image: url(../images/list_icon_inner.png);
+  font-size: 2rem;
+  background-color: limegreen;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+
+.catalog__element-inner {
+  list-style-image: url(../images/list_icon.png);
+  font-size: 1.2rem;
+  background-color: lightsalmon;
+  padding-bottom: 10px;
+}
+
+.catalog__element-inner-new::after {
+  content: "new";
+  background-color: mediumvioletred;
+  color: white;
+  padding: 2px 5px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2px 5px;
+  gap: 10px;
+}
+
+.gallery-pic {
+  outline: 3px solid red;
+  outline-width: 3px;
+  padding: 5px 10px;
+}
+
+.gallery-pic:hover {
+  outline: 0px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: lightsteelblue;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 2px 5px;
+}
+
+.form-group-sm:hover {
+  border: 3px dotted chocolate;
+}
+
+input[name="name"] {
+  text-transform: capitalize;
+}
+
+.main {
+  padding: 2px 20px;
+  background-color: bisque;
+  z-index: -1;
+  font-size: 2em;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  min-width: 100vw;
+  min-height: 30px;
+}
+
+.map {
+  width: 500px;
+}
+
+.map-align {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.goods-cat {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
+
+.komments {
+  padding: 2px 5px;
+}
+
+.komment {
+  padding: 2px 5px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <nav class="navbar">
+      <a class="navbar-link" href="../index.html">Главная</a>
+      <a class="navbar-link" href="catalog.html">Каталог</a>
+      <a class="navbar-link" href="contacts.html">Контакты</a>
+      <a class="navbar-link" href="gallery.html">Галерея</a>
+      <a class="navbar-link" href="articles.html">Статьи</a>
+      <a class="navbar-link" href="page-nav.html">Навигация</a>
+      <a class="navbar-link" href="registration.html">Регистрация</a>
+    </nav>
+  </header>
+
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <div class="container">
+
+    <h1 class="text-center">Регистрация</h1>
+    <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+      <fieldset>
+        <legend>#1 Базовые поля ввода</legend>
+
+        <div class="form-group">
+          <label for="login">Логин</label>
+          <input id="login" name="login" type="text" placeholder="Логин" minlength="3" maxlength="10" value="Andrii">
+        </div>
+
+        <div class="form-group">
+          <label for="passw">Пароль</label>
+          <input id="passw" name="passw" type="password" placeholder="Пароль" minlength="3" maxlength="10">
+        </div>
+
+        <div class="form-group">
+          <label for="age">Возраст</label>
+          <input id="age" name="age" type="number" placeholder="Возраст" min="1" max="122" value="25">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Имейл</label>
+          <input id="email" name="email" type="email" placeholder="Имейл">
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Телефон</label>
+          <input id="tel" name="tel" type="tel" placeholder="Телефон">
+        </div>
+
+        <div class="form-group">
+          <label for="search">Поиск</label>
+          <input id="search" name="search" type="search" placeholder="Поиск">
+        </div>
+
+        <div class="form-group">
+          <label for="date">Просто дата</label>
+          <input id="date" name="date" type="date">
+        </div>
+
+        <div class="form-group">
+          <label for="month">Какойто месяц</label>
+          <input id="month" name="month" type="month">
+        </div>
+
+        <div class="form-group">
+          <label for="file">Любой файл</label>
+          <input id="file" name="file" type="file">
+        </div>
+
+        <div class="hidden">
+          <input name="hid" type="hidden">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#2 Множественный выбор</legend>
+        <p>Опрос: предпочитаемая вами кухня</p>
+
+        <div class="form-group-sm">
+          <input id="ua" name="kit-ua" type="checkbox" value="ua">
+          <label for="ua">Украинская</label>
+        </div>
+
+        <div class="form-group-sm">
+          <input id="it" name="kit-it" type="checkbox" value="it">
+          <label for="it">Итальянская</label>
+        </div>
+
+        <div class="form-group-sm">
+          <input id="gr" name="kit-gr" type="checkbox" value="gr">
+          <label for="gr">Грузинская</label>
+        </div>
+
+        <div class="form-group-sm">
+          <input id="jp" name="kit-jp" type="checkbox" value="jp">
+          <label for="jp">Японская</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#3 Единственный выбор</legend>
+        <p>Укажите ваш пол</p>
+
+        <div class="form-group-sm">
+          <input id="male" name="gender" type="radio" value="male">
+          <label for="male">Мужской</label>
+        </div>
+
+        <div class="form-group-sm">
+          <input id="female" name="gender" type="radio" value="female">
+          <label for="female">Женский</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#4 Открывающийся список</legend>
+
+        <div class="form-group">
+          <label for="sel">Год выпуска вашего автомобиля</label>
+          <select id="sel" name="sel" multiple size="10">
+            <option selected disabled value="">Выберите год</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2021">2022</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#5 Многострочное поле</legend>
+
+        <div class="form-group">
+          <label for="txt">Подробная информация</label>
+          <textarea name="txt" id="txt" cols="40" rows="5" placeholder="Введите много текста..."></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#6 Кнопки управления формой</legend>
+
+        <div class="form-group">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="button" onclick="confirm('Ты студент?')">Просто кнопка</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer><i class="fa-sharp fa-solid fa-copyright"></i> Bezkrovnyj Alexandr</footer>
+</body>
+
+</html>
